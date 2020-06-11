@@ -1,9 +1,9 @@
 class ApplicationController < Sinatra::Base
 
-    set :views, ->{ file.join(root, '../views')}
+    set :views, ->{ File.join(root, '../views')}
 
     get '/' do
-        "hello"
+        erb :home
     end
 
 end
