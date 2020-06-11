@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_11_130438) do
+ActiveRecord::Schema.define(version: 2020_06_11_135557) do
+
+  create_table "beat_genres", force: :cascade do |t|
+    t.integer "beat_id"
+    t.integer "genre_id"
+  end
 
   create_table "beats", force: :cascade do |t|
     t.string "title"
