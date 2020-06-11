@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
     validates :username, uniqueness: true
 
     has_many :beats
-    has_many :genres, through: => :beats
+    has_many :genres, through: :beats
     
 end
