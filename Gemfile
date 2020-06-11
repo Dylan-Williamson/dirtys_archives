@@ -1,3 +1,4 @@
+source 'https://rubygems.org'
 
 gem "sinatra", "~> 2.0"
 
@@ -11,4 +12,4 @@ gem "pry", "~> 0.13.1"
 
 gem "require_all", "~> 3.0"
 
-gem 'sqlite3', '~> 1.3', '>= 1.3.6'
+gem 'sqlite3', '~> 1.4.2'
