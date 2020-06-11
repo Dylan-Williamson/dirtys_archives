@@ -1,4 +1,4 @@
-class CreateBeatsTable < ActiveRecord::Migration[6.0]
+class CreateBeats < ActiveRecord::Migration[6.0]
   def change
     create_table :beats do |t|
       t.string :title
