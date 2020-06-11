@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
 
     has_many :beats
     has_many :genres, through: => :beats
+    
 end
