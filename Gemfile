@@ -11,4 +11,4 @@ gem "pry", "~> 0.13.1"
 
 gem "require_all", "~> 3.0"
 
-gem "sqlite3", "~> 1.3"
+gem 'sqlite3', '~> 1.3', '>= 1.3.6'
