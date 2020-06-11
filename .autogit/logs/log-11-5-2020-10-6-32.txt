@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu Jun 11 2020 10:06:32 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* db/db.sqlite3
+* db/schema.rb
+
+
+Created files:
+* .autogit/logs/log-11-5-2020-9-36-21.txt
+* db/migrate/20200611135557_create_beat_genres_table.rb
+
+
+Deleted files:
+
+
+Renamed files:
