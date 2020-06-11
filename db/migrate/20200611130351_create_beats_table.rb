@@ -4,6 +4,7 @@ class CreateBeatsTable < ActiveRecord::Migration[6.0]
       t.string :title
       t.integer :user_id
       t.integer :genre_id
+      t.timestamps
     end
   end
 end
