@@ -1,3 +1,7 @@
+secrets.rb
+
+
+
 *.gem
 *.rbc
 /.config
