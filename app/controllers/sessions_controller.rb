@@ -7,11 +7,7 @@ class SessionsController < ApplicationController
     get '/signup' do 
         erb :'sessions/signup'
     end
-
-    post '/login' do
-        
-    end
-
+    
     post '/signup' do 
         @u = User.new(username: params[:username], password: params[:password])
         if @u.save
@@ -21,4 +17,15 @@ class SessionsController < ApplicationController
             erb :'sessions/signup'
         end
     end
+    
+        post '/login' do
+            u = User.find_by(username: params[:username])
+            if u && u.authenticate(params[:password])
+                session[:user_id] = u.id
+                redirect '/'
+            else
+                @error = "Invalid Credectials"
+                erb :'sessions/login'
+            end
+        end
 end
