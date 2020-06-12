@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
                 session[:user_id] = u.id
                 redirect '/'
             else
-                @error = "Invalid Credectials"
+                @error = "Incorrect Username or Password"
                 erb :'sessions/login'
             end
         end
