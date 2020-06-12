@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jun 12 2020 09:45:10 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/views/sessions/signup.erb
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
