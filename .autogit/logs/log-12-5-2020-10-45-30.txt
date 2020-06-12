@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jun 12 2020 10:45:30 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/controllers/sessions_controller.rb
+* config.ru
+* config/env.rb
+
+
+Created files:
+* app/controllers/users_controller.rb
+* app/views/users/dashboard.erb
+
+
+Deleted files:
+
+
+Renamed files:

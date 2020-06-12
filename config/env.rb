@@ -1,5 +1,3 @@
-
-
 ENV["APP_ENV"] ||= "development"
 
 require 'bundler/setup'
