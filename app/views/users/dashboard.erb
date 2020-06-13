@@ -1,18 +1,28 @@
-<h3><%= current_user.username %>!</h3>
+<h3>[<%= current_user.username %>]</h3>
+
+<h4>Your Beats:</h4>
+<% if current_user.beats.length > 0 %>
     <form action='/upload' method='post'>
         <input type='hidden' value='patch' name='_method'>
-        <input type="submit" value="Upload ">
+        <input type="submit" value="Upload New Beat">
     </form>
-<h4>Your Beats:</h4>
+    
+    <ul>
 
-<ul>
+        <% current_user.beats.each do |b| %>
+            <li><a href='/beat/<%= b.id %>%'><%= b.to_s %></a></li>
+        <% end %>
 
-    <% current_user.beats.each do |b| %>
-        <li><%= b.to_s %></li>
-    <% end %>
-</ul>
+    </ul>
+<% else %>
 
+    <h5>Nothing here yet. Start uploading now!</h5>
+        <form action='/upload' method='post'>
+            <input type='hidden' value='patch' name='_method'>
+            <input type="submit" value="Upload New Beat">
+        </form>
 
+<% end %>
 
 <%# <a href="#" class="myButton">Upload New Beat</a>
 
