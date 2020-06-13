@@ -1,0 +1,7 @@
+
+
+<ul>
+    <% @beats.each do |b| %>
+        <li><a href="/beat/<%= b.id %>"><%= b.to_s %></a></li>
+    <% end %>
+</ul>
