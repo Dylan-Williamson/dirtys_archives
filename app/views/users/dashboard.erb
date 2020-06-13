@@ -1,6 +1,7 @@
 <h3>Hey <%= current_user.username %>!</h3>
 
-<% if current_user.beats != [] %>
+<% if current_user.beats == [] %>
+    <h4>Start Uploading Now!</h4>
+<% else %>
     <h4>Your Beats</h4>
-<% current_user.beats.each do |b| %>
-<p><%= b.to_s %></p>
+<% end %>
