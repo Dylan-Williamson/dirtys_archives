@@ -1,3 +1,6 @@
-<h3>Hey <%= @current_user.username %>!</h3>
+<h3>Hey <%= current_user.username %>!</h3>
 
-<%# <% if current_user %> 
+<% if current_user.beats != [] %>
+    <h4>Your Beats</h4>
+<% current_user.beats.each do |b| %>
+<p><%= b.to_s %></p>
