@@ -1,6 +1,9 @@
 html{
     background-color: whitesmoke;
     
-    /* font-family: 'Libre Barcode 128 Text', cursive; */
     font-family: 'Jolly Lodger', cursive; 
 }
+
+a {
+    color: #d9220f;
+   }
