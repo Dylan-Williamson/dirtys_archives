@@ -36,6 +36,8 @@ class BeatsController < ApplicationController
     end
 
     delete '/beats/:id' do 
-
+        @beat = Beat.find(params[:id])
+        @beat.delete
+        redirect to '/beats'
     end
 end
