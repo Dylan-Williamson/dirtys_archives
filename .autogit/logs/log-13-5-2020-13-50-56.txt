@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jun 13 2020 13:50:56 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/views/layout.erb
+* public/stylesheets/style.css
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
