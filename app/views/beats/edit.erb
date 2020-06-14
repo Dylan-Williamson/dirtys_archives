@@ -4,9 +4,10 @@
     <input id="hidden" type="hidden" name="_method" value="patch">
     <input type="text" name="title">
     <select id="genre" name="genre"
-        <% Genre.each do |g| %>
+        <% @genres = Genre.all %>
+        <% @genres.each do |g| %>
             <option value="<%= g.name.downcase %>"><%= g.name %></option>
         <% end %>
     </select>
-  <input type="submit" value="submit">
+  <input type="submit" value="Update">
 </form>
