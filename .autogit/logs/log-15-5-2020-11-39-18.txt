@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jun 15 2020 11:39:18 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* app/views/logged_in_dashboard.erb
+* app/views/logged_out_dashboard.erb
+
+
+Deleted files:
+
+
+Renamed files:
