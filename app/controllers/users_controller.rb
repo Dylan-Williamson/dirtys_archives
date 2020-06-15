@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     patch '/account' do 
         authenticate
         @user = current_user
-        if !params[:password].empty?
+        if params[:password].empty?
             @user.update(username: params[:username])
             if @user.errors.any?
                 erb :'users/edit_account'
