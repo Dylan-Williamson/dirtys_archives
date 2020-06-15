@@ -3,13 +3,13 @@
         <p class="danger"><%= m %></p>
     <% end %>
 <% else %>
-    
+
 <% end %>
 
 <form action="/account" method="post">
     <input type="hidden" name="_method" value="patch">
     <input type="text" placeholder="New Username" value="<%= current_user.username %>" name="username">
-    <input type="password" placeholder="Old Password" name="password">
+    <input type="password" placeholder="Current Password" name="password">
     <input type="password" placeholder="New Password" name="new_password">
     <input type="password" placeholder="Confirm New Password" name="new_password_confirmation">
     <input type="submit" value="Update Account">
