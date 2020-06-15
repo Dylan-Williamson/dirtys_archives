@@ -4,6 +4,24 @@ html{
     font-family: 'Jolly Lodger', cursive; 
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+    height: 3em;
+    background-color: goldenrod;
+}
+
+body{
+    text-align: center;
+}
+
 a {
-    color: #d9220f;
+    text-decoration: none;
    }
+
+
+a:hover{
+    color: yellow
+}

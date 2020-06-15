@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jun 15 2020 12:09:29 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/controllers/sessions_controller.rb
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
