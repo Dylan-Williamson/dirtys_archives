@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
         end
 
         delete '/logout' do
-            sessions.clear
+            session.clear
             redirect '/login'
         end
 end
