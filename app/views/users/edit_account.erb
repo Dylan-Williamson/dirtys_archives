@@ -1,4 +1,10 @@
-
+<% if @user && @user.errors.any? %>
+    <% @user.errors.full_messages.each do |m| %>
+        <p class="danger"><%= m %></p>
+    <% end %>
+<% else %>
+    
+<% end %>
 
 <form action="/account" method="post">
     <input type="hidden" name="_method" value="patch">

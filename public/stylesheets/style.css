@@ -4,6 +4,10 @@ html{
     font-family: 'Jolly Lodger', cursive; 
 }
 
+.danger{
+    color: red;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;

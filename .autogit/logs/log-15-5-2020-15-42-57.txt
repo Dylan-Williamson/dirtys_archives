@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jun 15 2020 15:42:57 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/controllers/users_controller.rb
+* app/views/logged_in_navbar.erb
+
+
+Created files:
+* app/views/users/edit_account.erb
+
+
+Deleted files:
+
+
+Renamed files:

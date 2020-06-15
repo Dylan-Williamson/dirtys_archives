@@ -32,5 +32,6 @@ class UsersController < ApplicationController
                 @user.errors.add(:password, "is incorrect")
                 erb :'users/edit_account'
             end
+        end
     end
 end
