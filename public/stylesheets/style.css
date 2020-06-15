@@ -6,11 +6,17 @@ html{
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 7px;
-    height: 3em;
-    background-color: goldenrod;
+    height: 5em;
+    background-color: black;
+    padding-right: 50px;
+}
+
+.navbar-logo{
+    height: 5em;
+    width: 5em;
 }
 
 body{
