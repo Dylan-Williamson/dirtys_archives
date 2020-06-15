@@ -30,4 +30,9 @@ class SessionsController < ApplicationController
                 erb :'sessions/login'
             end
         end
+
+        delete '/logout' do
+            sessions.clear
+            redirect '/login'
+        end
 end
