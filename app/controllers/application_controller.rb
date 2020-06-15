@@ -12,6 +12,14 @@ class ApplicationController < Sinatra::Base
 
     helpers do
 
+        def render_navbar
+            if logged_in?
+                erb :logged_in_navbar
+            else
+                erb :logged_out_navbar
+            end
+        end
+
         def logged_in_redirect
             redirect '/dashboard' if logged_in?
         end
