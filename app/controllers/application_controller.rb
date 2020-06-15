@@ -11,6 +11,10 @@ class ApplicationController < Sinatra::Base
     end
 
     helpers do
+
+        def logged_in_redirect
+            redirect '/dashboard' if logged_in?
+        end
         
         def current_user
             @user ||= User.find_by(id: session[:user_id])

@@ -1,10 +1,12 @@
 class SessionsController < ApplicationController
 
     get '/login' do
+        logged_in_redirect
         erb :'sessions/login'
     end
 
     get '/signup' do 
+        logged_in_redirect
         erb :'sessions/signup'
     end
     
