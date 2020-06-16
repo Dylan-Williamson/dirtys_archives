@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Jun 16 2020 12:57:44 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/controllers/beats_controller.rb
+* db/db.sqlite3
+
+
+Created files:
+* app/views/beats/new.erb
+
+
+Deleted files:
+
+
+Renamed files:

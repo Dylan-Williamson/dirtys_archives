@@ -1,5 +1,5 @@
 html{
-    background-color: whitesmoke;
+    background-color: #370b24;
     font-family: 'Jolly Lodger', cursive;
     height: 100%; 
 }
@@ -13,7 +13,7 @@ html{
 }
 
 .not-found-page{
-    background-color: teal;
+    background-color: #3bad5d;
     height: 100%;
     display: flex;
     align-items: center;
@@ -33,19 +33,32 @@ html{
 
 .navbar-button{
     border: none;
-    background-color: white;
+    background-color: #901d5f;
     font-family: 'Jolly Lodger', cursive;
     font-size: 1em;
 }
 
 .navbar-button:hover{
-    color: #a61a0b;
+    color: #f631a3;
     cursor: pointer;
 }
 
 .navbar-logo{
     height: 5em;
     width: 5em;
+}
+
+h1{
+    color: #f631a3;
+    outline-color: black;
+}
+
+h2{
+    color: #2848d1;
+}
+
+p{
+    color: #28cfd1;
 }
 
 body{
@@ -55,10 +68,10 @@ body{
 
 a {
     text-decoration: none;
-    color: white;
+    color: #9d1f68;
    }
 
 
 a:hover{
-    color: #a61a0b;
+    color: #f631a3;
 }
