@@ -1,11 +1,24 @@
 html{
     background-color: whitesmoke;
-    
-    font-family: 'Jolly Lodger', cursive; 
+    font-family: 'Jolly Lodger', cursive;
+    height: 100%; 
 }
 
 .danger{
     color: red;
+}
+
+.four_o_four{
+    font-size: 5em;
+}
+
+.not-found-page{
+    background-color: teal;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .navbar{
@@ -37,6 +50,7 @@ html{
 
 body{
     text-align: center;
+    height: 100%;
 }
 
 a {

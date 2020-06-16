@@ -36,4 +36,9 @@ class ApplicationController < Sinatra::Base
             redirect '/login' if !logged_in?
         end
     end
+
+    error ActiveRecord::RecordNotFound do 
+        status 404
+        erb :not_found, layout: false
+    end
 end
