@@ -2,7 +2,7 @@
 
 <h3><%= @beat.title %></h3>
 
-<h5>Produced By: <%= @beat.user.username %></h5>
+<h4>Produced By: <%= @beat.user.username %></h4>
 
 <form action="/beats/<%= @beat.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">

@@ -1,5 +1,5 @@
 html{
-    background-color: #370b24;
+    background-color: black;
     font-family: 'Jolly Lodger', cursive;
     height: 100%; 
 }
@@ -49,16 +49,33 @@ html{
 }
 
 h1{
-    color: #f631a3;
-    outline-color: black;
+    color: #f63182;
+    font-size: 48px;
 }
 
 h2{
-    color: #2848d1;
+    color: #f631a3;
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+h3{
+    color: #f63182;
+    font-size: 28px;
+}
+
+h4{
+    color: #f631a3;
+    font-size: 24px;
+}
+
+h5{
+    color: #19cdf4;
+    font-size: 32px;
 }
 
 p{
-    color: #28cfd1;
+    color: #19cdf4;
 }
 
 body{

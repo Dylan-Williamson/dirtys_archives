@@ -1,7 +1,7 @@
-<h1>[<%= current_user.username %>]</h1>
+<h5>[<%= current_user.username %>]</h5>
 
-<h2>Beats:</h2>
 <% if current_user.beats.length > 0 %>
+	<h2>Beats:</h2>
     <form action='/upload' method='post'>
         <input type='hidden' value='patch' name='_method'>
         <input type="submit" value="Upload New Beat">
@@ -16,7 +16,7 @@
     </ul>
 <% else %>
 
-    <h5>Nothing here yet. Start uploading now!</h5>
+    <h3>Nothing here yet. Start uploading now!</h3>
         <form action='/upload' method='post'>
             <input type='hidden' value='patch' name='_method'>
             <input type="submit" value="Upload New Beat">
