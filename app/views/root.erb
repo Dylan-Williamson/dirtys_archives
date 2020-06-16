@@ -1,3 +1,8 @@
-<h2>Make your production heard now!</h2>
-<a href='/login'>Login</a>
-<a href='/signup'>Sign Up</a>
+<% if logged_in? %>
+    <%= redirect '/dashboard'%>
+<% else %>
+    <%= redirect '/login'%>
+    <%# <h2>Make your production heard now!</h2>
+    <a href='/login'>Login</a>
+    <a href='/signup'>Sign Up</a> %>
+<% end %>
