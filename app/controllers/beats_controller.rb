@@ -7,6 +7,7 @@ class BeatsController < ApplicationController
     end
 
     get '/beats/new' do
+        authenticate
         erb :'beats/new'
     end
 
