@@ -32,12 +32,22 @@ class ApplicationController < Sinatra::Base
             !!current_user
         end
 
-        def authenticate
-            redirect '/login' if !logged_in?
+        def authenticate 
+            raise AuthenticationError.new if !logged_in?
         end
     end
 
     error ActiveRecord::RecordNotFound do 
+        status 404
+        erb :not_found, layout: false
+    end
+
+    error AuthenticationError do
+        status 403
+        erb :not_authorized, layout: false
+    end
+
+    not_found do 
         status 404
         erb :not_found, layout: false
     end

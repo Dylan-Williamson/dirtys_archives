@@ -10,5 +10,5 @@ end
 if ENV["APP_ENV"] == "development"
     require_relative '../secrets'
 end
-
+require_all 'app/errors'
 require_all 'app'
