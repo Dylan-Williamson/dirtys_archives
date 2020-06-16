@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jun 15 2020 16:13:08 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/models/user.rb
+* app/views/users/edit_account.erb
+* db/db.sqlite3
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
