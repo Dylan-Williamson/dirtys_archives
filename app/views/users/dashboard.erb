@@ -17,9 +17,8 @@
 <% else %>
 
     <h3>Nothing here yet. Start uploading now!</h3>
-        <form action='/upload' method='post'>
-            <input type='hidden' value='patch' name='_method'>
-            <input type="submit" value="Upload New Beat">
+        <form action='/beats/new' method='get'>
+            <input type="submit" value="Upload">
         </form>
 
 <% end %>

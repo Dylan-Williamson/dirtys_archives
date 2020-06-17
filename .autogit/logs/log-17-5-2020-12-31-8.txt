@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jun 17 2020 12:31:08 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/views/beats/new.erb
+* app/views/beats/show.erb
+* app/views/users/dashboard.erb
+* db/db.sqlite3
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
