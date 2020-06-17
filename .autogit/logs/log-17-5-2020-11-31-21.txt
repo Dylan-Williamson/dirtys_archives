@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jun 17 2020 11:31:21 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/views/logged_in_navbar.erb
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
