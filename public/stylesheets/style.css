@@ -39,7 +39,7 @@ html{
 }
 
 .navbar-button:hover{
-    color: #f631a3;
+    color: #19cdf4;
     cursor: pointer;
 }
 
@@ -73,6 +73,7 @@ h4{
 
 h5{
     color: #19cdf4;
+    text-decoration: underline;
     font-size: 32px;
 }
 
