@@ -26,7 +26,7 @@ html{
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
-    height: 7em;
+    height: 5em;
     background-color: black;
     padding-right: 50px;
 }
@@ -45,8 +45,8 @@ html{
 }
 
 .navbar-logo{
-    height: 7em;
-    width: 7em;
+    height: 5em;
+    width: 5em;
     filter: brightness(50%) sepia(1) hue-rotate(132deg) saturate(103.3%) brightness(91.2%);
     -webkit-filter: brightness(50%) sepia(1) hue-rotate(140deg) saturate(200.3%) brightness(120%);
 }
@@ -57,7 +57,7 @@ h1{
 }
 
 h2{
-    color: #f631a3;
+    color: #f63182;
     text-decoration: underline;
     font-size: 36px;
 }
