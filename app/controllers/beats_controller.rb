@@ -12,8 +12,8 @@ class BeatsController < ApplicationController
     end
 
     post '/beats' do 
-        @beat = Beat.create(title: params[:title], genre_id: params[:genre_id])
-        redirect to '/beats/#{@beat.id}'
+        @beat = Beat.create(title: params[:title], genre_id: params[:genre_id], )
+        redirect to '/dashboard'
     end
 
     get '/beats/:id' do 
@@ -38,7 +38,7 @@ class BeatsController < ApplicationController
 
     delete '/beats/:id' do 
         @beat = Beat.find(params[:id])
-        @beat.delete
+        @beat.destroy
         redirect to '/beats'
     end
 end
