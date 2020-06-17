@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jun 17 2020 14:31:48 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/models/beat.rb
+* app/models/genre.rb
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

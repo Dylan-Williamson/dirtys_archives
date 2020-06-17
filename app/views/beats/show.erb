@@ -1,9 +1,12 @@
-
-
 <h3><%= @beat.title %></h3>
 <h4>Produced By: <%= @beat.user.username %></h4>
+<h3>Genre: <%= @beat %></h3>
 
-<h5>Genre: <%= @beat %></h5>
+<%# add soundcloud embed %>
+
+<form action='/beats/:id/edit' method='get'>
+  <input type="submit" value="Edit">
+</form>
 
 <form action="/beats/<%= @beat.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
