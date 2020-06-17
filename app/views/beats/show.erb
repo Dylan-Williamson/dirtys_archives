@@ -4,6 +4,8 @@
 
 <h4>Produced By: <%= @beat.user.username %></h4>
 
+<h5>Genre: <%= @beat.genre %></h5>
+
 <form action="/beats/<%= @beat.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="Delete">

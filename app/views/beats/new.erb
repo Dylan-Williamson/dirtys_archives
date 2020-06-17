@@ -1,6 +1,6 @@
 <form action='/beats' method="post">
     <input type="text" name="title" placeholder="Title">
-    <select id="genre" name="genre"
+    <select id="genre" name="genre_id"
         <% @genres = Genre.all %>
         <% @genres.each do |g| %>
             <option value="<%= g.name.downcase %>"><%= g.name %></option>
