@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu Jun 18 2020 08:15:10 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/views/beats/edit.erb
+* app/views/beats/show.erb
+* app/views/users/dashboard.erb
+* app/views/users/edit_account.erb
+* db/db.sqlite3
+
+
+Created files:
+* .autogit/logs/log-17-5-2020-15-1-57.txt
+
+
+Deleted files:
+
+
+Renamed files:

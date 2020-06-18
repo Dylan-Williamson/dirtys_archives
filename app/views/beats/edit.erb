@@ -5,7 +5,7 @@
 <form action="/beats/<%= @beat.id %>" method="patch">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <input type="text" placeholder="Updated Title" value="<%= @beat.title %>" name="title">
-    <select id="genre" name="genre"
+    <select id="genre" name="name"
         <% @genres = Genre.all %>
         <% @genres.each do |g| %>
             <option value="<%= g.name.downcase %>"><%= g.name %></option>
