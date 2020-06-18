@@ -1,8 +1,10 @@
 <h2>Update Track</h2>
 
-<form action="/beats/<%= @beat.id %>" method="post">
+
+
+<form action="/beats/<%= @beat.id %>" method="patch">
     <input id="hidden" type="hidden" name="_method" value="patch">
-    <input type="text" name="title">
+    <input type="text" placeholder="Updated Title" value="<%= @beat.title %>" name="title">
     <select id="genre" name="genre"
         <% @genres = Genre.all %>
         <% @genres.each do |g| %>

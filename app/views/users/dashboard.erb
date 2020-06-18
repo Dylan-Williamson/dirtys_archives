@@ -9,7 +9,7 @@
     <ul>
 
         <% current_user.beats.each do |b| %>
-            <li><a href='/beats/<%= b.id %>'><%= b.to_s %></a></li>
+            <li><a href='/beats/<%= b.id %>'><%= b.title %></a></li>
         <% end %>
 
     </ul>
