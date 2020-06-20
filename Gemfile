@@ -15,3 +15,5 @@ gem "require_all", "~> 3.0"
 gem 'sqlite3', '~> 1.4.2'
 
 gem "bcrypt", "~> 3.1"
+
+gem "tux", "~> 0.3.0"
