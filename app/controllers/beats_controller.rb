@@ -22,20 +22,20 @@ class BeatsController < ApplicationController
         erb :'beats/edit'
     end
     
-    patch '/beats/:id' do 
-        authenticate
-        @beat = Beat.find(params[:id])
-        @beat.update(title: params[:title])
-        @beat.save
-        redirect to '/beats/#{@beat.id}'
-    end
-    
     get '/beats/:id' do 
         authenticate
         @beat = Beat.find(params[:id])
         erb :'beats/show'
     end
-
+    
+    patch '/beats/:id' do 
+        authenticate
+        @beat = Beat.find(params[:id])
+        @beat.update(title: params[:title])
+        @beat.save
+        redirect to '/dashboard'
+    end
+        
     delete '/beats/:id' do 
         @beat = Beat.find(params[:id])
         @beat.destroy
