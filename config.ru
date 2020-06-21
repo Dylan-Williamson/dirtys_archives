@@ -1,4 +1,4 @@
-require_relative './config/env'
+require './config/env.rb'
 
 use Rack::MethodOverride
 use BeatsController
