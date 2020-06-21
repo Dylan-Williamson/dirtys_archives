@@ -13,7 +13,8 @@ Content Management System for music producers.
 
 ## Usage
 
-Execute shotgun(terminal).
+1) Execute shotgun(terminal).
+2) In your browser, navigate to http://localhost:9393
 
 ## Contributing
 
