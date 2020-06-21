@@ -5,6 +5,5 @@ class User < ActiveRecord::Base
     validates :password, length: {in: 8..20}, unless: ->(u){ u.password.blank? }
 
     has_many :beats
-    has_many :genres, through: :beats
     
 end

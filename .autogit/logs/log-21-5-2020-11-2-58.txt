@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jun 21 2020 11:02:58 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* app/models/beat.rb
+* app/models/genre.rb
+* db/db.sqlite3
+* db/schema.rb
+
+
+Created files:
+* .autogit/logs/log-20-5-2020-20-32-5.txt
+* notes.md
+
+
+Deleted files:
+
+
+Renamed files:
