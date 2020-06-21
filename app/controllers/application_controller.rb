@@ -31,6 +31,13 @@ class ApplicationController < Sinatra::Base
         def authenticate 
             raise AuthenticationError.new if !logged_in?
         end
+
+        def authorize(beat) 
+            authenticate
+            if beat.user != current_user
+                redirect '/beats'
+            end
+        end
     end
 
     error ActiveRecord::RecordNotFound do 

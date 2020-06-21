@@ -17,30 +17,30 @@ class BeatsController < ApplicationController
         redirect to '/dashboard'
     end
     
-    get '/beats/:id/edit' do 
-        authenticate
-        @beat = Beat.find(params[:id])
-        erb :'beats/edit'
-    end
-    
     get '/beats/:id' do 
         authenticate
         @beat = Beat.find(params[:id])
         erb :'beats/show'
     end
     
-    patch '/beats/:id' do 
-        authenticate
+    get '/beats/:id/edit' do 
         @beat = Beat.find(params[:id])
+        authorize(@beat)
+        erb :'beats/edit'
+    end
+    
+    patch '/beats/:id' do 
+        @beat = Beat.find(params[:id])
+        authorize(@beat)
         @beat.update(title: params[:title])
         @beat.save
         redirect to '/dashboard'
     end
         
     delete '/beats/:id' do
-        authenticate 
-        @beat = Beat.find(params[:id])
-        @beat.destroy
+        b = Beat.find(params[:id])
+        authorize(b)
+        b.destroy
         redirect to '/dashboard'
     end
 end
