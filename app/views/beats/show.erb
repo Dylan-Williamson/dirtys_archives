@@ -2,12 +2,13 @@
 <h4>Produced By: <%= @beat.user.username %></h4>
 
 <%# add soundcloud embed %>
+<% if current_user && current_user = @beat.user %>
+  <form action='/beats/<%= @beat.id %>/edit' method='get'>
+    <input type="submit" value="Edit">
+  </form>
 
-<form action='/beats/<%= @beat.id %>/edit' method='get'>
-  <input type="submit" value="Edit">
-</form>
-
-<form action="/beats/<%= @beat.id %>" method="post">
-  <input id="hidden" type="hidden" name="_method" value="delete">
-  <input type="submit" value="Delete">
-</form>
+  <form action="/beats/<%= @beat.id %>" method="post">
+    <input id="hidden" type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete">
+  </form>
+  <% end %>
