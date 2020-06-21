@@ -41,6 +41,6 @@ class BeatsController < ApplicationController
         authenticate 
         @beat = Beat.find(params[:id])
         @beat.destroy
-        redirect to '/beats'
+        redirect to '/dashboard'
     end
 end
