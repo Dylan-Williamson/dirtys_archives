@@ -29,12 +29,6 @@ class BeatsController < ApplicationController
         @beat.save
         redirect to '/beats/#{@beat.id}'
     end
-
-
-
-
-
-
     
     get '/beats/:id' do 
         authenticate

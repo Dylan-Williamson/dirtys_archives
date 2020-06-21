@@ -2,9 +2,9 @@
 
 
 
-<form action="/beats/<%= @beat.id %>" method="patch">
-    <input id="hidden" type="hidden" name="_method" value="patch">
-    <input type="text" placeholder="Updated Title" value="<%= @beat.title %>" name="title">
+<form action="/beats/<%= @beat.id %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <input type="text" name="title" value="<%=@beat.title%>">
     <input type="submit" value="Update">
 </form>
 
