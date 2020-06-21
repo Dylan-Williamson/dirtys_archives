@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jun 21 2020 15:10:07 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* README.md
+* spec.md
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
