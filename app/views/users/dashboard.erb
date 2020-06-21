@@ -1,9 +1,8 @@
 <h5><%= current_user.username %></h5>
 <% if current_user.beats.length > 0 %>
 	<h2>Beats:</h2>
-    <form action='/beats/new' method='post'>
-        <input type='hidden' value='patch' name='_method'>
-        <input type="submit" value="Upload New Beat">
+    <form action='/beats/new' method='get'>
+        <input type="submit" value="Upload">
     </form>
     
     <ul>
