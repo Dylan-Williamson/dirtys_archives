@@ -12,7 +12,7 @@ class BeatsController < ApplicationController
     end
 
     post '/beats' do 
-        @beat = Beat.create(title: params[:title])
+        @beat = Beat.create(title: params[:title], user: current_user)
         redirect to '/dashboard'
     end
     
