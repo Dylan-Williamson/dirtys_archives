@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jun 20 2020 20:32:05 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* config.ru
+
+
+Created files:
+* .autogit/logs/log-20-5-2020-10-32-23.txt
+* db/seeds.rb
+
+
+Deleted files:
+
+
+Renamed files:
