@@ -12,7 +12,7 @@ class BeatsController < ApplicationController
     end
 
     post '/beats' do 
-        @beat = Beat.create(title: params[:title], genre_id: params[:genre_id], )
+        @beat = Beat.create(title: params[:title])
         redirect to '/dashboard'
     end
     
@@ -21,18 +21,11 @@ class BeatsController < ApplicationController
         @beat = Beat.find(params[:id])
         erb :'beats/edit'
     end
-
-
-
-
-
-
     
     patch '/beats/:id' do 
         authenticate
         @beat = Beat.find(params[:id])
-        @genre_id = Genre.find(params[:name]).id
-        @beat.update(title: params[:title], genre_id: @genre_id)
+        @beat.update(title: params[:title])
         @beat.save
         redirect to '/beats/#{@beat.id}'
     end
