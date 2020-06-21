@@ -20,19 +20,19 @@ class SessionsController < ApplicationController
         end
     end
     
-        post '/login' do
-            u = User.find_by(username: params[:username])
-            if u && u.authenticate(params[:password])
-                session[:user_id] = u.id
-                redirect '/dashboard'
-            else
-                @error = "Incorrect Username or Password"
-                erb :'sessions/login'
-            end
+    post '/login' do
+        u = User.find_by(username: params[:username])
+        if u && u.authenticate(params[:password])
+            session[:user_id] = u.id
+            redirect '/dashboard'
+        else
+            @error = "Incorrect Username or Password"
+            erb :'sessions/login'
         end
+    end
 
-        delete '/logout' do
-            session.clear
-            redirect '/login'
-        end
+    delete '/logout' do
+        session.clear
+        redirect '/login'
+    end
 end
