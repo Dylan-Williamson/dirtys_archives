@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jun 27 2020 11:16:09 GMT-0400 (Eastern Daylight Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-25-5-2020-22-19-20.txt
+
+
+Deleted files:
+
+
+Renamed files:
