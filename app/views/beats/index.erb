@@ -1,37 +1,29 @@
-<% @investment = 500 %>
+<% @initial_investment = 500 %>
+<% @investment = @initial_investment %>
 <% @num = 0 %>
+<% @goal = 1000000 %>
 <h1>Strategy #1</h1>
-<h2>Taking 10% Profit Per Sale</h2>
-<h3>Start: $500</h3>
-<h4>Total Sales Needed: 80</h4>
+<h4>Taking 10% Profit Per Sale</h4>
+<h3>Start: $<%= @investment %></h3>
 
-<% while @investment <= 1000000 do %>
+<% while @investment <= @goal do %>
     <% @investment = (@investment*1.1).round %>
     <% @num = @num + 1%>
     <p><%= @num %>) <%= @investment.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
 <% end %>
 
+<h2>Total Sales Needed: <%= @num %></h4>
 
-<% @investment = 500 %>
+<% @investment = @initial_investment %>
 <% @num = 0 %>
-<h2>Taking 1% Profit Per Trade</h2>
-<h3>Start: $500</h3>
+<br><br><h1>Strategy #2</h1>
+<h4>Taking 1% Profit Per Trade</h4>
+<h3>Start: $<%= @investment %></h3>
 
-<% while @investment <= 1000000 do %>
+<% while @investment <= @goal do %>
     <% @investment = (@investment*1.01).round %>
     <% @num = @num + 1%>
     <p><%= @num %>) <%= @investment.to_s.reverse.scan(/\d{3}|.+/).join(",").reverse %></p>
 <% end %>
 
-
-
-<% if false %>
-
-    <h2>Trending Beats:</h2>
-
-    <ul>
-        <% @beats.each do |b| %>
-            <li><a href="/beats/<%= b.id %>"><%= b.to_s %></a></li>
-        <% end %>
-    </ul>
-<% end %>
+<h2>Total Trades Needed: <%= @num %> | <%= (@num / 10).round %> Days @ 10 Trades Per Day</h2>
